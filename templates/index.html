@@ -1,7 +1,7 @@
 {% extends "base.html" %} {% block content %}
 <section class="blog-list-page-section">
   <ul class="post-ul">
-    {%for page in section.pages %} {% if loop.index < 5 %}
+    {%for page in section.pages %}
     <li class="post-li">
       <a class="post-a" href="{{ page.permalink | safe}}">
         <p class="sawarabi-gothic-regular">
@@ -10,7 +10,7 @@
         </p>
       </a>
     </li>
-    {% endif %} {% endfor %}
+    {% endfor %}
   </ul>
 </section>
 {% endblock content %}
