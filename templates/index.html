@@ -1,15 +1,18 @@
 {% extends "base.html" %} {% block content %}
 <section class="blog-list-page-section">
-  <ul class="post-ul">
+  <h1 class="title">ブログ記事一覧</h1>
+  <ul>
     {%for page in section.pages %}
-    <li class="post-li">
-      <a class="post-a" href="{{ page.permalink | safe}}">
-        <p class="sawarabi-gothic-regular">
-          <span class="post-date">{{ page.date }}</span
-          ><span class="post-title">{{ page.title }}</span>
+    <a href="{{ page.permalink | safe}}">
+      <li>
+        <p>作成日: {{ page.date }}</p>
+        <p>
+          執筆者:{% for author in page.authors %}&nbsp;&nbsp;&nbsp;{{author}}{%
+          endfor %}
         </p>
-      </a>
-    </li>
+        <h2>{{ page.title }}</h2>
+      </li>
+    </a>
     {% endfor %}
   </ul>
 </section>
