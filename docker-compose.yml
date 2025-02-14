@@ -1,7 +1,7 @@
 services:
-  ultra-coins-website:
-    image: ultra-coins-website
-    container_name: ultra-coins-website
+  ultra-coins-blog:
+    image: ultra-coins-blog
+    container_name: ultra-coins-blog
     build:
       context: .
       dockerfile: ./Dockerfile

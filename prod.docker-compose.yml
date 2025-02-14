@@ -1,7 +1,7 @@
 services:
-  ultra-coins-website:
+  ultra-coins-blog:
     image: ghcr.io/ultra-coins/ultra-coins-blog/blog:main
-    container_name: ultra-coins-website
+    container_name: ultra-coins-blog
     build:
       context: .
       dockerfile: ./Dockerfile
