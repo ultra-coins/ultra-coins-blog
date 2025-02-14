@@ -4,60 +4,6 @@
 
 ブログは、zola という SSG(静的サイトジェネレータ)を使用しています。
 
-## 使用した SSG
-
-zola 0.19.2
-
-## レスポンシブ対応
-
-対応済み
-
-## templates の構造
-
-以下、疑似 html で表現している
-
-### メインページ
-
-```
-<base.html>
-  <index.html></index.html>
-</base.html>
-```
-
-### 記事ページ
-
-```
-<base.html>
-    <blog-template.html></blog-template.html>
-</base.html>
-```
-
-### 404 ページ
-
-```
-<base.html>
-    <404.html></404.html>
-</base.html>
-```
-
-## shortcodes を置く場所
-
-`/templates/shortcodes/`配下に置いてください
-
-## 環境の Setup
-
-### 非 Nix ユーザーの場合
-
-以下を参考に zola をインストールしてください。
-
-https://www.getzola.org/documentation/getting-started/installation/
-
-### Nix ユーザーの場合 (flake を利用できる場合)
-
-```shell
-nix develop -c $SHELL
-```
-
 ## 記事を書くときのルール
 
 1. 適当に作成するディレクトリ名で branch を切ってから、作業に取りかかってください。
@@ -66,6 +12,16 @@ nix develop -c $SHELL
 ## 記事の追加方法
 
 適当なディレクトリを`content`配下に作成し、その中に`index.md`を作成する。
+
+`index.md`のテンプレート
+
+```md
++++
+title = "タイトル"
+date = 2000-01-01
+authors = ["執筆者"]
++++
+```
 
 > [!WARNING]
 > すでに存在するディレクトリ名は使用できません。
@@ -248,6 +204,60 @@ image-server["image-server (画像専用)"] <--> client["client"]
 ```
 
 ![caution](https://github.com/ultra-coins/ultra-coins-blog/blob/main/assets/caution.png)
+
+## 使用した SSG
+
+zola 0.19.2
+
+## レスポンシブ対応
+
+対応済み
+
+## templates の構造
+
+以下、疑似 html で表現している
+
+### 記事一覧ページ
+
+```
+<base.html>
+  <index.html></index.html>
+</base.html>
+```
+
+### 記事ページ
+
+```
+<base.html>
+    <blog-template.html></blog-template.html>
+</base.html>
+```
+
+### 404 ページ
+
+```
+<base.html>
+    <404.html></404.html>
+</base.html>
+```
+
+## shortcodes を置く場所
+
+`/templates/shortcodes/`配下に置いてください
+
+## 環境の Setup
+
+### 非 Nix ユーザーの場合
+
+以下を参考に zola をインストールしてください。
+
+https://www.getzola.org/documentation/getting-started/installation/
+
+### Nix ユーザーの場合 (flake を利用できる場合)
+
+```shell
+nix develop -c $SHELL
+```
 
 ## References
 
