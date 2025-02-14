@@ -7,8 +7,8 @@
       <li>
         <p>作成日: {{ page.date }}</p>
         <p>
-          執筆者:{% for author in page.authors %}&nbsp;&nbsp;&nbsp;{{author}}{%
-          endfor %}
+          執筆者:{%for author in page.authors %} {% if loop.last %}{{ author
+          }}{% else %}{{ author }},&ensp;{% endif %} {% endfor %}
         </p>
         <h2>{{ page.title }}</h2>
       </li>
