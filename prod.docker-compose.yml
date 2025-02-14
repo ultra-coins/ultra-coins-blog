@@ -1,6 +1,6 @@
 services:
   ultra-coins-website:
-    image: ghcr.io/ultra-coins/ultra-coins-website/website:main
+    image: ghcr.io/ultra-coins/ultra-coins-blog/blog:main
     container_name: ultra-coins-website
     build:
       context: .
