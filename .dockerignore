@@ -5,10 +5,10 @@ public/
 .dockerignore
 .envrc
 .gitignore
-docker-compose.yaml
+docker-compose.yml
 Dockerfile
 flake.lock
 flake.nix
 LICENSE
-prod.docker-compose.yaml
+prod.docker-compose.yml
 README.md
