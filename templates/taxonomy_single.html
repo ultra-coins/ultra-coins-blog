@@ -15,13 +15,10 @@
       </a>
       <p class="tags">
         {% for tag in page.taxonomies.tags %} {% if loop.last %}
-        <a href="{{ config.base_url | safe }}tags/{{ tag | safe }}"
-          >#{{ tag | safe }}</a
-        >
+        <a href="/tags/{{ tag | safe }}">#{{ tag | safe }}</a>
         {%else %}
-        <a href="{{ config.base_url | safe }}tags/{{ tag | safe }}"
-          >#{{ tag | safe }}</a
-        >,&ensp; {% endif %} {% endfor %}
+        <a href="/tags/{{ tag | safe }}">#{{ tag | safe }}</a>,&ensp; {% endif
+        %} {% endfor %}
       </p>
     </li>
     {% endfor %}

@@ -6,13 +6,10 @@
       <h1 class="blog-title">{{ page.title | safe }}</h1>
       <p class="blog-meta">
         {% for tag in page.taxonomies.tags %}{% if loop.last %}
-        <a href="{{ config.base_url | safe }}tags/{{ tag | safe }}"
-          >#{{ tag | safe }}</a
-        >
+        <a href="/tags/{{ tag | safe }}">#{{ tag | safe }}</a>
         {%else %}
-        <a href="{{ config.base_url | safe }}tags/{{ tag | safe }}"
-          >#{{ tag | safe }}</a
-        >,&ensp; {% endif %} {% endfor %}
+        <a href="/tags/{{ tag | safe }}">#{{ tag | safe }}</a>,&ensp; {% endif
+        %} {% endfor %}
       </p>
       <p class="blog-meta">
         公開日:&ensp;{{ page.date | safe }}&emsp;&emsp;作成者:&ensp;{%for author
