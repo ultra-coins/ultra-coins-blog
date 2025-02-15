@@ -21,7 +21,7 @@ title = "タイトル"
 date = 2000-01-01
 authors = ["執筆者"]
 [taxonomies]
-tags = ["Ultra-Coins"]
+tags = ["Ultra-Coins", "network"]
 +++
 ```
 
