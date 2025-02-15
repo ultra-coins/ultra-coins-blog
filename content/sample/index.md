@@ -2,6 +2,8 @@
 title = "Sample Blog Page"
 date = 3000-01-01
 authors = ["Ultra-Coins", "筑波大学"]
+[taxonomies]
+tags = ["GitOps", "k8s"]
 +++
 
 # h1

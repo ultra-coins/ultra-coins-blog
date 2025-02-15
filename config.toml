@@ -21,6 +21,19 @@ generate_feeds = true
 # There is also a built-in template "rss.xml" that renders an RSS 2.0 feed.
 feed_filenames = ["rss.xml"]
 
+# The taxonomies to be rendered for the site and their configuration of the default languages
+# Example:
+#     taxonomies = [
+#       {name = "tags", feed = true}, # each tag will have its own feed
+#       {name = "tags"}, # you can have taxonomies with the same name in multiple languages
+#       {name = "categories", paginate_by = 5},  # 5 items per page for a term
+#       {name = "authors"}, # Basic definition: no feed or pagination
+#     ]
+#
+taxonomies = [
+    {name = "tags", feed = true},
+]
+
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
@@ -52,6 +65,16 @@ include_date = true
 include_path = true
 # Whether to include the rendered content of the page/section in the index
 include_content = true
+
+[slugify]
+# Various slugification strategies, see below for details
+# Defaults to everything being a slug
+paths = "off"
+taxonomies = "off"
+# Whether to remove date prefixes for page path slugs.
+# For example, content/posts/2016-10-08_a-post-with-dates.md => posts/a-post-with-dates
+# When true, content/posts/2016-10-08_a-post-with-dates.md => posts/2016-10-08-a-post-with-dates
+paths_keep_dates = true
 
 [extra]
 # Put all your custom variables here

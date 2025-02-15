@@ -5,11 +5,27 @@
     <div class="blog-container blog-config">
       <h1 class="blog-title">{{ page.title }}</h1>
       <p class="blog-meta">
-        <span>公開日: {{ page.date }}</span>
-        <span
-          >作成者: {%for author in page.authors %} {% if loop.last %}{{ author
-          }}{% else %}{{ author }},&ensp;{% endif %} {% endfor %}</span
-        >
+        {% for tag in page.taxonomies.tags %}
+          {% if loop.last %}
+            #{{ tag }}
+          {%else %}
+            #{{ tag }},&ensp;
+          {% endif %}
+        {% endfor %}
+      </p>
+      <p class="blog-meta">
+        <span>公開日: </span>
+        <span>{{ page.date }}</span>
+        <span>作成者: </span>
+        <span>
+          {%for author in page.authors %}
+            {% if loop.last %}
+              {{ author }}
+            {% else %}
+              {{ author }},&ensp;
+            {% endif %}
+          {% endfor %}
+        </span>
       </p>
       <p><a href="/">ブログ記事一覧に戻る</a></p>
       {{ page.content | safe }}
