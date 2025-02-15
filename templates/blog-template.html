@@ -6,9 +6,9 @@
       <h1 class="blog-title">{{ page.title | safe }}</h1>
       <p class="blog-meta">
         {% for tag in page.taxonomies.tags %}{% if loop.last %}
-        <a href="/tags/{{ tag | safe }}">#{{ tag | safe }}</a>
+        <a href="/tags/{{ tag | safe }}/">#{{ tag | safe }}</a>
         {%else %}
-        <a href="/tags/{{ tag | safe }}">#{{ tag | safe }}</a>,&ensp; {% endif
+        <a href="/tags/{{ tag | safe }}/">#{{ tag | safe }}</a>,&ensp; {% endif
         %} {% endfor %}
       </p>
       <p class="blog-meta">
