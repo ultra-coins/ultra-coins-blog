@@ -20,8 +20,17 @@
 title = "タイトル"
 date = 2000-01-01
 authors = ["執筆者"]
+[taxonomies]
+tags = ["Ultra-Coins"]
 +++
 ```
+
+> [!WARNING]
+> タグ名の表記揺れを防ぐために、`TAG_LIST.md`を確認して、存在しないタグを付けたい場合は、`TAG_LIST.md`にタグ名を追記してください。
+>
+> **※すでに存在しているタグの別名表記を追加するのは、やめてください。**
+>
+> [TAG_LIST.mdのリンク](https://github.com/ultra-coins/ultra-coins-blog/blob/main/TAG_LIST.md)
 
 > [!WARNING]
 > すでに存在するディレクトリ名は使用できません。
