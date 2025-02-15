@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     {% block rss %}<link rel="alternate" type="application/rss+xml" title="RSS"
-    href="{{ get_url(path="rss.xml", trailing_slash=false) }}">{% endblock %}
+    href="{{ get_url(path="rss.xml", trailing_slash=false) | safe }}">{%
+    endblock %}
     <link rel="shortcut icon" href="/favicon.ico" />
     <meta name="theme-color" content="rgb(15.29, 15.29, 15.29)" />
     <!--Google Fonts-->
