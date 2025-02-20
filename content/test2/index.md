@@ -14,3 +14,6 @@ print("hello world)
 
 > 金くれ
 
+{% warning() %}
+金くれProMax
+{% end %}
