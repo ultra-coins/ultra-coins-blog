@@ -1,0 +1,9 @@
+services:
+  ultra-coins-blog:
+    image: ghcr.io/ultra-coins/ultra-coins-blog/blog:20250327152207173238231
+    container_name: ultra-coins-blog
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "3000:80"
