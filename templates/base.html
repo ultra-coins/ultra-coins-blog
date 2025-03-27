@@ -72,17 +72,29 @@
     {% block content %} {% endblock %}
     <!--footer-->
     <footer>
-      <p class="credit">
-        <a class="sawarabi-gothic-regular" href="https://yukiosada.work">
-          © <span id="year"></span> Designed and Created by: Yuki Osada
+      <div class="credit">
+        <a
+          class="pc-credit sawarabi-gothic-regular"
+          href="https://yukiosada.work"
+        >
+          © <span id="pc-year"></span> Designed and Created by: Yuki Osada
         </a>
-      </p>
+        <a
+          class="mobile-credit sawarabi-gothic-regular"
+          href="https://yukiosada.work"
+        >
+          <p>© <span id="mobile-year"></span> Designed and Created by:</p>
+          <p>Yuki Osada</p>
+        </a>
+      </div>
     </footer>
     <!--footer-->
     <script type="module">
       import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
       mermaid.initialize({ startOnLoad: true, theme: "dark" });
-      document.getElementById("year").textContent = new Date().getFullYear();
+      const year = new Date().getFullYear();
+      document.getElementById("pc-year").textContent = year;
+      document.getElementById("mobile-year").textContent = year;
     </script>
   </body>
 </html>
