@@ -1,6 +1,6 @@
 services:
   ultra-coins-blog:
-    image: ghcr.io/ultra-coins/ultra-coins-blog/blog:20250327152207173238231
+    image: ghcr.io/ultra-coins/ultra-coins-blog/blog:20250327152948064282458
     container_name: ultra-coins-blog
     build:
       context: .
