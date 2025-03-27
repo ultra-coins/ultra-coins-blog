@@ -2,6 +2,7 @@
 .github/
 assets/
 public/
+release/
 .dockerignore
 .envrc
 .gitignore
@@ -10,5 +11,4 @@ Dockerfile
 flake.lock
 flake.nix
 LICENSE
-prod.docker-compose.yml
 README.md

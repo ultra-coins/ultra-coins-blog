@@ -45,6 +45,13 @@ jobs:
           push: true
           tags: ${{ env.REGISTRY }}/${{ github.repository }}/${{ env.IMAGE_NAME }}:${{ steps.tag.outputs.time }}
       - name: Convert base_url for gh-pages
-        run: sed -i '3 s/ghcr.io\/ultra-coins\/ultra-coins-blog\/blog/ghcr.io\/ultra-coins\/ultra-coins-blog\/blog:${{ steps.tag.outputs.time }}/g' prod.compose.yaml
-      - name: Show prod.compose.yaml
-        run: cat prod.compose.yaml
+        run: sed -i '3 s/ghcr.io\/ultra-coins\/ultra-coins-blog\/blog/ghcr.io\/ultra-coins\/ultra-coins-blog\/blog:${{ steps.tag.outputs.time }}/g' release/prod.compose.yaml
+      - name: Show release/prod.compose.yaml
+        run: cat release/prod.compose.yaml
+      - name: Push prod.compose.yaml to release branch
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: release
+          FOLDER: release
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
