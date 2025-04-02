@@ -45,7 +45,7 @@ jobs:
           push: true
           tags: ${{ env.REGISTRY }}/${{ github.repository }}/${{ env.IMAGE_NAME }}:${{ github.ref_name }}
       - name: Update timestamp message
-        run: sed -i '10 s/# timestamp/# timestamp:${{ steps.tag.outputs.time }}/g' release/prod.compose.yaml
+        run: sed -i '1 s/# timestamp/# timestamp:${{ steps.tag.outputs.time }}/g' release/prod.compose.yaml
       - name: Show release/prod.compose.yaml
         run: cat release/prod.compose.yaml
       - name: Push prod.compose.yaml to release branch

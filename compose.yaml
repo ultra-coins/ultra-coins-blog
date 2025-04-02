@@ -1,3 +1,4 @@
+# timestamp
 services:
   ultra-coins-blog:
     image: ultra-coins-blog
@@ -7,4 +8,3 @@ services:
       dockerfile: ./Dockerfile
     ports:
       - "3000:80"
-# timestamp
