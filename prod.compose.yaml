@@ -1,3 +1,4 @@
+#timestamp:20250402125100899040705
 services:
   ultra-coins-blog:
     image: ghcr.io/ultra-coins/ultra-coins-blog/blog
