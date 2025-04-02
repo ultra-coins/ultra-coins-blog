@@ -1,7 +1,7 @@
-#timestamp:20250402125100899040705
+#timestamp:20250402125754656558244
 services:
   ultra-coins-blog:
-    image: ghcr.io/ultra-coins/ultra-coins-blog/blog
+    image: ghcr.io/ultra-coins/ultra-coins-blog/blog:main
     container_name: ultra-coins-blog
     build:
       context: .
