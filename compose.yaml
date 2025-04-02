@@ -1,4 +1,4 @@
-# timestamp
+#timestamp
 services:
   ultra-coins-blog:
     image: ultra-coins-blog
