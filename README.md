@@ -268,6 +268,13 @@ https://www.getzola.org/documentation/getting-started/installation/
 nix develop -c $SHELL
 ```
 
+## DeepWiki
+
+> [!WARNING]
+> 生成されたdeepwikiの内容の正確性は、検証していません。
+
+https://deepwiki.com/ultra-coins/ultra-coins-blog/
+
 ## References
 
 https://www.getzola.org/documentation/getting-started/overview/#content
