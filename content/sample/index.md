@@ -1,10 +1,13 @@
 +++
-title = "Sample Blog Page"
-date = 3000-01-01
+title = "Ultra-Coinsブログ 爆誕"
+date = 2025-07-04
 authors = ["Ultra-Coins", "筑波大学"]
 [taxonomies]
-tags = ["GitOps", "k8s"]
+tags = ["Ultra-Coins"]
 +++
+
+Ultra-Coinsブログ をzolaで作成しました、Myxogastria0808です。
+Shortcodesも複数用意したので、表現が豊かな数々のブログがこれから作成されることでしょう。 利用できる記法を様々載せています。
 
 # h1
 
