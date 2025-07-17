@@ -1,11 +1,11 @@
-#timestamp:20250717170049220866054
+#timestamp:20250717171506837115159
 services:
   ultra-coins-blog:
     image: ghcr.io/ultra-coins/ultra-coins-blog/blog:main
     container_name: ultra-coins-blog
     labels:
       traefik.enable: true
-      traefik.http.routers.ultra-coins-blog.rule: "Host(`ultra.coins.tsukuba.ac.jp`) && Path(`/blog/`)"
+      traefik.http.routers.ultra-coins-blog.rule: "Host(`ultra.coins.tsukuba.ac.jp`) && PathPrefix(`/blog`)"
       traefik.http.services.ultra-coins-blog.loadbalancer.server.port: 80
       traefik.http.routers.ultra-coins-blog.entrypoints: websecure
       traefik.http.routers.ultra-coins-blog.tls: true
