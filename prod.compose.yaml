@@ -1,4 +1,4 @@
-#timestamp:20250718033328744591019
+#timestamp:20250718033909049534820
 services:
   ultra-coins-blog:
     image: ghcr.io/ultra-coins/ultra-coins-blog/blog:main
@@ -11,10 +11,10 @@ services:
       traefik.http.routers.ultra-coins-blog.entrypoints: websecure
       traefik.http.routers.ultra-coins-blog.tls: true
       #* Remove prefix from /blog to /
-      # create a middleware named `remove-prefix`
-      traefik.http.middlewares.remove-prefix.stripprefix.prefixes: /blog
-      # apply the middleware named `remove-prefix`
-      traefik.http.routers.ultra-coins-blog.middlewares: remove-prefix@docker
+      # create a middleware named `remove-prefix-blog`
+      traefik.http.middlewares.remove-prefix-blog.stripprefix.prefixes: /blog
+      # apply the middleware named `remove-prefix-blog`
+      traefik.http.routers.ultra-coins-blog.middlewares: remove-prefix-blog@docker
     networks:
       - traefik
 
