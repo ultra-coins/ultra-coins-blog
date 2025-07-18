@@ -12,7 +12,7 @@ services:
       traefik.http.routers.ultra-coins-blog.tls: true
       #* Convert prefix from /blog to /
       # create a middleware named `convert-prefix`
-      traefik.http.middlewares.convert-prefix.stripprefix.prefix: /blog
+      traefik.http.middlewares.convert-prefix.stripprefix.prefixes: /blog
       # apply the middleware named `convert-prefix`
       traefik.http.routers.ultra-coins-blog.middlewares: convert-prefix@docker
     networks:
