@@ -3,7 +3,7 @@ base_url = "/blog/"
 
 # The site title and description; used in feeds by default.
 title = "Ultra-Coins"
-description = "This is a ultara coins website and blog site."
+description = "This is a ultra coins website and blog site."
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
