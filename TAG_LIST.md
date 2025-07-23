@@ -4,3 +4,8 @@
 > タグ名の表記揺れを避けるために、使ったタグはここに追加してください。
 
 - Ultra-Coins
+- FPGA
+- Vivado
+- Docusaurus
+- Cloudflare Pages
+- ドキュメント
