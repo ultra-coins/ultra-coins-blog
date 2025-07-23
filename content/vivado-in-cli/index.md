@@ -24,7 +24,7 @@ tags = ["FPGA", "Vivado", "Docusaurus", "Cloudflare Pages", "ドキュメント"
 
 ちなみに公開したドキュメントは以下のリンクで公開しています。
 
-[https://my-xilinx-docs.pages.dev/](https://my-xilinx-docs.pages.dev/)
+https://my-xilinx-docs.pages.dev/
 
 # Cloudflare Pages
 
