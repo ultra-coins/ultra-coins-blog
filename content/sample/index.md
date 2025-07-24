@@ -1,7 +1,7 @@
 +++
 title = "Ultra-Coinsブログ 爆誕"
 date = 2025-07-04
-authors = ["Ultra-Coins", "筑波大学"]
+authors = ["Myxogastria0808"]
 [taxonomies]
 tags = ["Ultra-Coins"]
 +++
