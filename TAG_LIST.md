@@ -9,3 +9,4 @@
 - Docusaurus
 - Cloudflare Pages
 - ドキュメント
+- 総会
