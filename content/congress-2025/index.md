@@ -1,7 +1,7 @@
 +++
 title = "Ultra-Coins総会 2025"
 date = 2025-07-28
-authors = [ "Myxogastria0808"]
+authors = ["Myxogastria0808"]
 [taxonomies]
 tags = ["Ultra-Coins", "総会"]
 +++
