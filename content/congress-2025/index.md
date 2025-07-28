@@ -40,5 +40,5 @@ Ultra-Coins総会 2025のページです。
     - 内容: ラックサーバーを購入したことについて
 
 - ENTERNET (ENTERNET 研究会)
-    - 発表者: 
+    - 発表者: TBD
     - 内容: ENTERNETの研究会について
