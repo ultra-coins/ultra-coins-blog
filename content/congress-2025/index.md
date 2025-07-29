@@ -28,6 +28,7 @@ Ultra-Coins総会 2025のページです。
 - 2025年度進捗報告
   - 発表者: whatacotton
   - 内容: 今年度の活動内容と成果について
+  - 資料: [Ultra-Coins 25年度の活動について](activity.pdf)
 
 - 部屋の諸々について
     - 発表者: 間瀬bb
@@ -36,15 +37,18 @@ Ultra-Coins総会 2025のページです。
 - サイト及びブログのデプロイとロゴの作成
     - 発表者: Myxogastria0808
     - 内容: サイト及びブログのデプロイとロゴの作成について
+    - 資料: [Ultra-CoinsのWebsite及びBlogの作成](website-blog-logo.pdf)
 
 - ラックサーバーを買ったことなど
     - 発表者: reversed_R、appare45、Myxogastria0808
     - 内容: ラックサーバーを購入したことについて
+    - 資料: [ラックサーバー購入について](rack-server.pdf)
 
 - OSSミラーをやっています
     - 発表者: motorailgun
     - 内容: OSSミラーについて
+    - 資料: [OSSミラーをやっています](oss-mirror.pdf)
 
 - ENTERNET (ENTERNET 研究会)
-    - 発表者: TBD
+    - 発表者: ENTERNET 研究会 大本
     - 内容: ENTERNETの研究会について
