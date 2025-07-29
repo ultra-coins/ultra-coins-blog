@@ -20,7 +20,8 @@ Ultra-Coins総会 2025のページです。
 2. 部屋の諸々について
 3. サイト及びブログのデプロイとロゴの作成
 4. ラックサーバーを買ったことなど
-5. ENTERNET (ENTERNET 研究会)
+5. OSSミラーをやっています
+6. ENTERNET (ENTERNET 研究会)
 
 ## 発表内容
 
@@ -39,6 +40,10 @@ Ultra-Coins総会 2025のページです。
 - ラックサーバーを買ったことなど
     - 発表者: reversed_R、appare45、Myxogastria0808
     - 内容: ラックサーバーを購入したことについて
+
+- OSSミラーをやっています
+    - 発表者: motorailgun
+    - 内容: OSSミラーについて
 
 - ENTERNET (ENTERNET 研究会)
     - 発表者: TBD
