@@ -21,7 +21,7 @@ Ultra-Coins総会 2025のページです。
 3. サイト及びブログのデプロイとロゴの作成
 4. ラックサーバーを買ったことなど
 5. OSSミラーをやっています
-6. ENTERNET (ENTERNET 研究会)
+6. ENTERNET 2024 - 2025
 
 ## 発表内容
 
@@ -49,6 +49,5 @@ Ultra-Coins総会 2025のページです。
     - 内容: OSSミラーについて
     - 資料: [OSSミラーをやっています](oss-mirror.pdf)
 
-- ENTERNET (ENTERNET 研究会)
+- ENTERNET 2024 - 2025
     - 発表者: ENTERNET 研究会 大本
-    - 内容: ENTERNETの研究会について
