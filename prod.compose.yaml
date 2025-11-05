@@ -1,4 +1,4 @@
-#timestamp:20250902154648447237333
+#timestamp:20251105102751586445281
 services:
   ultra-coins-blog:
     image: ghcr.io/ultra-coins/ultra-coins-blog/blog:main
@@ -15,6 +15,7 @@ services:
       traefik.http.middlewares.remove-prefix-blog.stripprefix.prefixes: /blog
       # apply the middleware named `remove-prefix-blog`
       traefik.http.routers.ultra-coins-blog.middlewares: remove-prefix-blog@docker
+    restart: always
     networks:
       - traefik
 
