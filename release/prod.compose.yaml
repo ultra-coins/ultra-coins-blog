@@ -15,6 +15,7 @@ services:
       traefik.http.middlewares.remove-prefix-blog.stripprefix.prefixes: /blog
       # apply the middleware named `remove-prefix-blog`
       traefik.http.routers.ultra-coins-blog.middlewares: remove-prefix-blog@docker
+    restart: always
     networks:
       - traefik
 
