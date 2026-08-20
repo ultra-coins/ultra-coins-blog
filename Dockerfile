@@ -1,4 +1,4 @@
-FROM ghcr.io/getzola/zola:v0.22.1 as builder
+FROM ghcr.io/getzola/zola:v0.23.4 as builder
 
 LABEL version="0.0.1"
 LABEL descripttion="Ultra-Coins Blog"
