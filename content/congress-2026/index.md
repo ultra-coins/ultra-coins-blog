@@ -17,8 +17,10 @@ tags = ["Ultra-Coins", "総会"]
 
 - 開会
 - Ultra-Coinsについて(担当教員 鹿野先生)
+- Ultra-Coinsの紹介 (間瀬太陽)
+  - [資料](ultra-coins-sokai2026-introduction.pdf)
 - 大学におけるガレージ的機能の重要性について (登)
-  - [資料](https://dnobori.cyber.ipa.go.jp/ppt/download/260721_LRPH5C%20Ultra-Coins%20%E7%B7%8F%E4%BC%9A/)
+  - [資料](https://dnobori.cyber.ipa.go.jp/ppt/download/20260721_LRPH5C%20Ultra-Coins%20%E7%B7%8F%E4%BC%9A/)
 - Ultra-Coinsでの活動近況(Cephストレージクラスタの構築等) (秋山広樹)
   - [資料](ultra-coins-sokai2026-akiyamahiroki.pdf)
 - 日程調整アプリ「Tsunagari」 (黒澤)
@@ -26,7 +28,7 @@ tags = ["Ultra-Coins", "総会"]
 - Ansys での学生ロケット向け数値解析の挑戦 (臼井)
   - [資料](ultra-coins-sokai2026-usuiyuto.pdf)
 - ファームウェアアップデートサーバの実装 (小松)
-  - [資料](ultra-coins-soukai-komatsutakuma.pdf)
+  - [資料](ultra-coins-sokai2026-komatsutakuma.pdf)
 - クラウド基盤の開発 (中村壮馬)
   - [資料](ultra-coins-sokai2026-somanakamura.pdf)
 - Ultra-Coins等における活動報告 (高橋)
@@ -44,3 +46,4 @@ tags = ["Ultra-Coins", "総会"]
 - Kubernetesクラスターをラック間で冗長化する (中村天晴)
   - [資料](ultra-coins-sokai2026-nakamuratakaharu.pdf)
 - 閉会
+
