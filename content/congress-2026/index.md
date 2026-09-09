@@ -6,7 +6,7 @@ authors = ["reversed_R"]
 tags = ["Ultra-Coins", "総会"]
 +++
 
-2026 年度の Ultra-Coins総会が7月21日に行われました。
+2026年度の Ultra-Coins総会が7月21日に行われました。
 
 ## 開催概要
 
