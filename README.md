@@ -62,10 +62,10 @@ fn main() {
 ### 画像
 
 ```
-{{ image(path="/image/path") }}
+{{ <image path="/image/path" /> }}
 ```
 
-image は、`width=int`,`height=int`,`caption=String`をそれぞれオプションで追加できます。(Blog の sample ページを参照)
+image は、`width={int}`,`height={int}`,`caption="String"`をそれぞれオプションで追加できます。(Blog の sample ページを参照)
 
 > [!NOTE] > `width`や`height`に非常に大きな自然数を入れた場合は、Markdown の結果が表示される DOM の範囲まで大きくなります。
 >
@@ -74,7 +74,7 @@ image は、`width=int`,`height=int`,`caption=String`をそれぞれオプショ
 #### `width`,`height`,`caption`を全て適用した例
 
 ```
-{{ image(path="/content/sample/image.jpg", width=1000, height=200, caption="captionの例") }}
+{{ <image path="/content/sample/image.jpg" width={1000} height={200} caption="captionの例" /> }}
 ```
 
 ![image](https://github.com/ultra-coins/ultra-coins-blog/blob/main/assets/image.png)
@@ -103,15 +103,15 @@ $$
 ### mermaid
 
 ```
-{% mermaid() %}
+{% <mermaid> %}
 #この中に mermaid のコードを書く
-{% end %}
+{% </mermaid> %}
 ```
 
 #### 例
 
 ```
-{% mermaid() %}
+{% <mermaid> %}
 flowchart LR
 rdb["PostgreSQL (RDB)"] <--> server["server (main)"]
 graphdb["Neo4j (GraphDB)"] <--> server["server (main)"]
@@ -119,7 +119,7 @@ meilisearch["Meilisearch (検索エンジン)"] <--> server["server (main)"]
 cloudflare["Cloudflare R2 (画像保存)"] <--> image-server["image-server (画像専用)"]
 server["server (main)"] <--> client["client"]
 image-server["image-server (画像専用)"] <--> client["client"]
-{% end %}
+{% </mermaid> %}
 ```
 
 ![marmaid](https://github.com/ultra-coins/ultra-coins-blog/blob/main/assets/marmaid.png)
@@ -127,17 +127,17 @@ image-server["image-server (画像専用)"] <--> client["client"]
 ### note
 
 ```
-{% note() %}
+{% <note> %}
 # ここに note の内容を書く
-{% end %}
+{% </note> %}
 ```
 
 #### 例
 
 ```
-{% note() %}
+{% <note> %}
 これは note です。
-{% end %}
+{% </note> %}
 ```
 
 ![note](https://github.com/ultra-coins/ultra-coins-blog/blob/main/assets/note.png)
@@ -145,17 +145,17 @@ image-server["image-server (画像専用)"] <--> client["client"]
 ### tip
 
 ```
-{% tip() %}
+{% <tip> %}
 # ここに tip の内容を書く
-{% end %}
+{% </tip> %}
 ```
 
 #### 例
 
 ```
-{% tip() %}
+{% <tip> %}
 これは tip です。
-{% end %}
+{% </tip> %}
 ```
 
 ![tip](https://github.com/ultra-coins/ultra-coins-blog/blob/main/assets/tip.png)
@@ -163,17 +163,17 @@ image-server["image-server (画像専用)"] <--> client["client"]
 ### important
 
 ```
-{% important() %}
+{% <important> %}
 # ここに important の内容を書く
-{% end %}
+{% </important> %}
 ```
 
 #### 例
 
 ```
-{% important() %}
+{% <important> %}
 これは important です。
-{% end %}
+{% </important> %}
 ```
 
 ![important](https://github.com/ultra-coins/ultra-coins-blog/blob/main/assets/important.png)
@@ -181,17 +181,17 @@ image-server["image-server (画像専用)"] <--> client["client"]
 ### warning
 
 ```
-{% warning() %}
+{% <warning> %}
 # ここに warning の内容を書く
-{% end %}
+{% </warning> %}
 ```
 
 #### 例
 
 ```
-{% warning() %}
+{% <warning> %}
 これは warning です。
-{% end %}
+{% </warning> %}
 ```
 
 ![warning](https://github.com/ultra-coins/ultra-coins-blog/blob/main/assets/warning.png)
@@ -199,17 +199,17 @@ image-server["image-server (画像専用)"] <--> client["client"]
 ### caution
 
 ```
-{% caution() %}
+{% <caution> %}
 # ここに caution の内容を書く
-{% end %}
+{% </caution> %}
 ```
 
 #### 例
 
 ```
-{% caution() %}
+{% <caution> %}
 これは caution です。
-{% end %}
+{% </caution> %}
 ```
 
 ![caution](https://github.com/ultra-coins/ultra-coins-blog/blob/main/assets/caution.png)
@@ -250,9 +250,10 @@ zola 0.19.2
 </base.html>
 ```
 
-## shortcodes を置く場所
+## components を置く場所
 
-`/templates/shortcodes/`配下に置いてください
+Zola 0.23 で shortcodes は廃止されたため、Tera の components を利用しています。
+`/templates/components.html`に`{% component 名前(引数) %}...{% endcomponent 名前 %}`の形式で定義してください
 
 ## 環境の Setup
 
