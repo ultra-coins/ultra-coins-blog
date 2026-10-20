@@ -1,4 +1,4 @@
-FROM ghcr.io/getzola/zola:v0.23.6 as builder
+FROM ghcr.io/getzola/zola:v0.23.6 AS builder
 
 LABEL version="0.0.1"
 LABEL descripttion="Ultra-Coins Blog"
@@ -6,7 +6,7 @@ LABEL maintainer="Ultra-Coins"
 
 COPY . /project
 WORKDIR /project
-RUN ["zola", "build"]
+RUN ["/zola", "build"]
 
 FROM nginx:alpine
 COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
