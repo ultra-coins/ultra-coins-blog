@@ -1,3 +1,55 @@
+{% component note() %}
+<div class="note alert-type">
+  <p class="alert-type-label">NOTE</p>
+
+{{ body | safe }}
+
+</div>
+{% endcomponent note %}
+
+{% component tip() %}
+<div class="tip alert-type">
+  <p class="alert-type-label">TIP</p>
+
+{{ body | safe }}
+
+</div>
+{% endcomponent tip %}
+
+{% component important() %}
+<div class="important alert-type">
+  <p class="alert-type-label">IMPORTANT</p>
+
+{{ body | safe }}
+
+</div>
+{% endcomponent important %}
+
+{% component warning() %}
+<div class="warning alert-type">
+  <p class="alert-type-label">WARNING</p>
+
+{{ body | safe }}
+
+</div>
+{% endcomponent warning %}
+
+{% component caution() %}
+<div class="caution alert-type">
+  <p class="alert-type-label">CAUTION</p>
+
+{{ body | safe }}
+
+</div>
+{% endcomponent caution %}
+
+{% component mermaid() %}
+<pre class="mermaid">
+  {{ body }}
+</pre>
+{% endcomponent mermaid %}
+
+{% component image(path: string, width: integer = 0, height: integer = 0, caption: string = "") %}
 {# body #} {% if width and height %} {# for custom image #} {# width: true,
 height: true #} {% set image = resize_image(path=path, height=height,
 width=width, op="fill", format="webp", quality=75) %}
@@ -34,3 +86,4 @@ format="webp", quality=75) %}
 {% endif %} {# caption #} {% if caption %}
 <p class="caption">{{ caption | safe }}</p>
 {% endif %}
+{% endcomponent image %}
